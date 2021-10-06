@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../styles/css/index.css" />
+    <title>Login</title>
+</head>
+<body>
+    <div class="container-fluid login">
+        <div class="login__row-full row">
+          
+            <div class="login__column--left col-5">
+                <div class="login__login-form-frame">
+                <div class="login__login-form-title">
+                    <span class="headings2--bold font-color--orange">Sign In</span>
+                    <span class="headings3--regular">Masuk ke aplikasi untuk berbelanja buku</span>
+                </div>
+                <form class="login__reduce-width" method="POST" action="">
+                    <div class="form-group">
+                      <label class="headings4--semibold font-color--orange login__login-form-subtitle" for="emailAddr">Email Address</label>
+                      <input
+                        type="email"
+                        class="form-control form-control-user login__login-form-input"
+                        id="exampleInputEmail"
+                        placeholder="Enter your email address"
+                        name="emailAddr"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label class="headings4--semibold font-color--orange login__login-form-subtitle" for="password">Password</label>
+                      <input
+                        type="password"
+                        class="form-control form-control-user login__login-form-input"
+                        id="exampleInputPassword"
+                        placeholder="Enter your password"
+                        name="password"
+                      />
+                    </div>
+                    <input type="submit" value="SIGN IN" class="btn btnsubmit--fullsized">
+                    <div class="login__login-form-invitesignup">
+                        <span class="headings4--semibold">Dont have an account yet ?</span> <a href="#"><span class="headings4--semibold font-color--orange">Create an account</span></a>
+                    </div>
+                  </form>
+                </div>
+            </div>
+        
+        
+            <div class="login__column--right col-7">
+                <div class="login__background-logo-frame">
+                    <div class="login__background-logo-circle">
+                    </div>
+                    <img src="../../public/assets/login-logo.svg">
+                </div>
+                <div>
+                    <span class="headings2--bold font-color--white">Shop Now,
+                        <br>
+                        We’ll deliver it to you</span>
+                    <br>
+                    <span class="headings3--regular font-color--white">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        <br>
+                        sed do eiusmod tempor 
+                    </span>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</html>
