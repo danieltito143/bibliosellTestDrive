@@ -7,7 +7,7 @@ const setOrangeCard = (cardElement) => {
 }
 
 const removeOrangeCard = (cardElement) => {
-    cardElement.style.setBackgroundColor = "white";
+    cardElement.style.backgroundColor = "";
     cardElement.style.color = "black";
 }
 
