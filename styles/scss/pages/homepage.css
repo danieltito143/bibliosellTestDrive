@@ -415,4 +415,16 @@
   text-align: center;
   margin-top: 8rem;
 }
+
+.homepage-bottom__logo {
+  margin-left: 5%;
+}
+
+.homepage-bottom__desc {
+  padding-left: 5%;
+}
+
+.homepage-bottom__desc-right {
+  padding-right: 5%;
+}
 /*# sourceMappingURL=homepage.css.map */
