@@ -359,3 +359,19 @@
         margin-top: 8rem;
     }
 }
+
+.homepage-bottom {
+
+    &__logo {
+        margin-left: 5%;
+    }
+    
+    &__desc {
+        padding-left: 5%;
+    }
+
+    &__desc-right {
+        padding-right: 5%;
+    }
+
+}
