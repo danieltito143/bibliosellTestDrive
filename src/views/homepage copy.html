@@ -13,6 +13,8 @@
     <!-- My CSS -->
     <link rel="stylesheet" href="../../styles/css/index.css">
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
     <title> BiblioSell </title>
   </head>
   <body>
@@ -267,7 +269,7 @@
       </section>
 
       <!-- Section 4 -->
-      <section id="page3">
+      <section id="page4">
         <div class="homepage-section4">
         <div class="container-fluid nopadding">
           <div class="row">
@@ -331,10 +333,10 @@
       </section>
 
       <!-- Bottom -->
-      <div class="homepage-bottom">
+      <div class="navbar-footer">
 
         <!-- Logo -->
-        <div class="homepage-bottom__logo">
+        <div class="navbar-footer__logo">
           <div class="container-fluid nopadding">
             <div class="row">
               <div class="col-4">
@@ -347,7 +349,7 @@
         <!-- Bottom Navbar -->
         <nav class="navbar navbar-expand-lg navbar-light bottom">
           <div class="container-fluid">
-            <div class="homepage-bottom__desc">
+            <div class="navbar-footer__desc">
             <span class="headings4--regular">
               All rights reserved by Bali Team Copyrights 2021
             </span>
@@ -380,3 +382,11 @@
   </body>
   <script src="../../public/js/homepage.js"></script>
 </html>
+<script>
+  $(function () {
+  $(document).scroll(function () {
+    var $nav = $(".navbar");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+  });
+});
+</script>

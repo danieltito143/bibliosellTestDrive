@@ -1,30 +1,26 @@
+
 .detailproduct-page {
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 100vh;
-    margin-top: 50px;
+    margin-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
 
     &__title {
-        margin-top: 8rem;
-        margin-right: 10vw;
+        margin-bottom: 30px;
     }
 
-    // &__column-right {
-    //     padding-top: 200px;
-    //     padding-left: 5%;
-    //     padding-right: 10vw;
-    // }
+    &__title-description {
+        margin-bottom: 10px;
+    }
 
-    // &__title {
-    //     padding-top: 10vh;
-    //     padding-right: 5%;
-    // }
+    &__column-right{
+        padding-left: 20px;
+    }
 
     &__image-frame{
         width: 100%; 
-        height: 50vh;
+        height: 400px;
         z-index: 1;
+        // padding-right: 30px;
         position: relative;
         display: inline-grid;
         justify-items: center;
@@ -33,7 +29,7 @@
 
         > img {
             width: 100%; 
-            height: 100%; 
+            height: auto; 
             z-index: 3;
             position: absolute;
             display: flex;
@@ -41,5 +37,45 @@
             text-align: center;
             align-items: center;
         }
+    }
+
+    &__background-gray-square {
+        background-color: #F5F5F5;
+        width: 100%; 
+        height: 100%; 
+        border-radius: 3px;
+        position: absolute;
+        z-index: 2;
+        display: flex;
+        align-self: center;
+        align-self: center;
+    }
+    
+    &__single-line-horizontal {
+        display: block;
+        border-color: #5A5A5A; 
+        margin-top: 0.5em; 
+        margin-bottom: 0.5em; 
+        margin-left: auto; 
+        margin-right: auto; 
+        overflow: hidden; 
+        border-style: inset; 
+        border-width: 1px;
+    }
+
+    &__pic-collections {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 10px;
+    }
+
+    &__pic-each-collection {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 3px;
+        height: 120px;
+        background-color: #F5F5F5;
     }
 }

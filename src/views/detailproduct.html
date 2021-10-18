@@ -51,69 +51,93 @@
       <!-- Detail Product -->
       <section id="Detail">
         <div class="detailproduct-page">
-        <div class="container-fluid nopadding">
-          <div class="row">
-            <div class="detailproduct-page__title">
-                <span class="headings1--bold font-color--orange">
+          <div class="container-fluid nopadding">
+            <div class="row">
+              <div class="col-12">
+                <div class="detailproduct-page__title">
+                  <span class="headings2--bold font-color--orange">
                     Detail Product
-                </span>
-                <br>
+                  </span>
+                  <br>
+                  <span class="headings3--regular">
+                    Lorem ipsum dolor sit amet, consectetur adipis
+                  </span>
+                </div>
+                <div class="detailproduct-page__title-description">
+                  <p>
+                      <a class="headings3--regular link--inactive" href="#">Home</a>
+                      /
+                      <a class="headings3--regular link--active" href="#">Product Detail</a>
+                  </p>
+                </div>
               </div>
-              <div class="detailproduct-page__title-description">
-                <span class="headings3--regular">
-                  Lorem ipsum dolor sit amet, consectetur adipis
-                </span>
-                <br>
-              </div>
-              <br>
-              <br>
-              <div class="detailproduct-page__text">
-                <p>
-                    <a class="headings3--regular" href="#">Home</a>
-                    /
-                    <a class="headings3--semibold" href="#">Product Detail</a>
-                </p>
             </div>
-            <!-- Left Side -->
-            <div class="col-6 nopadding">
+            <div class="row">              
+              <!-- Left Side -->
+              <div class="col-4">
               <div class="detailproduct-page__image-frame">
-                <!-- <div class="homepage-section4__background-logo-circle"></div> -->
+                <div class="detailproduct-page__background-gray-square"></div>
                 <img src="../../public/assets/detailproduct.svg" alt="">
               </div>
+                <div class="row detailproduct-page__pic-collections">
+                  <div class="col-4">
+                    <div class="detailproduct-page__pic-each-collection">
+                      hasemele
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="detailproduct-page__pic-each-collection">
+                      hasemele
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="detailproduct-page__pic-each-collection">
+                      hasemele
+                    </div>
+                  </div>
+                </div>
             </div>
 
             <!-- Right Side -->
-            <div class="col-6">
+            <div class="col-8">
               <div class="detailproduct-page__column-right">
                 <div class="detailproduct-page__desc">
-                  <span class="headings1--bold">
+                  <span class="headings2--bold">
                     Rich Dad Poor Dad
                   </span>
                   <br>
-                  <span class="headings2--regular">
+                  <span class="headings3--regular">
                     IDR 100.000
                   </span>
                   <br>
-                  <br>
+                </div>
+                <div>
+                  <button id="btn-minus" onclick="reduceQuantity()">-</button>
+                  <span id="book-quantity">1</span>
+                  <button id="btn-plus" onclick="addQuantity()">+</button>
                 </div>
                 <span>
-                  <a href="#" class="btn btnsubmit--smallsized">Add to cart</a>
+                  <a href="#" class="btn btnsubmit--halfsized">Add to Cart</a>
+                </span>
+                <span>
+                  <a href="#" class="btn btnsubmit--halfsized--gray">Add to Wishlist</a>
                 </span>
               </div>
             </div>
           </div>
         </div>
+        <hr class="detailproduct-page__single-line-horizontal">
       </div>
       </section>
 
       <!-- Bottom -->
-      <div class="homepage-bottom">
+      <div class="navbar-footer">
 
         <!-- Logo -->
-        <div class="homepage-bottom__logo">
+        <div class="navbar-footer__logo">
           <div class="container-fluid nopadding">
             <div class="row">
-              <div class="col-4">
+              <div class="col-4 nopadding">
                 <img src="../../public/assets/logo company-01 2.svg" alt="">
               </div>
             </div>
@@ -123,7 +147,7 @@
         <!-- Bottom Navbar -->
         <nav class="navbar navbar-expand-lg navbar-light bottom">
           <div class="container-fluid">
-            <div class="homepage-bottom__desc">
+            <div class="navbar-footer__desc">
             <span class="headings4--regular">
               All rights reserved by Bali Team Copyrights 2021
             </span>
@@ -135,13 +159,13 @@
              <div class="heading2--regular">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#jumbo">HOME</a>
+                  <a class="nav-link active" aria-current="page" href="../views/homepage copy.html">HOME</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="#Page1">CATEGORY</a>
+                  <a class="nav-link active" href="#">CATEGORY</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="#Page2">ABOUT</a>
+                  <a class="nav-link active" href="#">ABOUT</a>
                 </li>
               </ul>
              </div> 
@@ -155,3 +179,16 @@
     crossorigin="anonymous"></script>
   </body>
 </html>
+
+<script>
+  function reduceQuantity () {
+    let currentQuantity = parseInt(document.getElementById("book-quantity").innerHTML);
+    currentQuantity === 1 ? 1 : currentQuantity--;
+    document.getElementById("book-quantity").innerHTML = currentQuantity;
+  }
+  function addQuantity () {
+    let currentQuantity = parseInt(document.getElementById("book-quantity").innerHTML);
+    currentQuantity++; //Untuk penjagaan max quantity harus berdasarkan stok barang tersisa dari API
+    document.getElementById("book-quantity").innerHTML = currentQuantity;
+  }
+</script>

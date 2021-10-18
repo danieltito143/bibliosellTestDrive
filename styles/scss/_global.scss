@@ -1,9 +1,18 @@
 body {
   font-size: 1rem;
+  overflow-x: hidden;
 
 }
 
 /* Navbar */
+.navbar{
+  padding-left: .75rem;
+  padding-right: .75rem;
+  &.scrolled {
+    background-color: #fff !important;
+    transition: background-color 200ms linear;
+  }
+}
 
 #navbarNav {
   justify-content: center;
@@ -11,9 +20,9 @@ body {
       display: flex;
       width: 70%;
       justify-content: space-evenly;
+      padding-right: 5%;
   }
 }
-
 
 .nopadding {
   padding: 0 !important;
@@ -32,7 +41,8 @@ body {
   background-color: #FDAF2F;
   color:#FFFF;
   width: 100%;
-  height: 45px;
+  height: 45px;font-size: 1.25rem;
+	font-family: 'Poppins', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,6 +55,22 @@ body {
   color:#FFFF;
   width: 50%;
   height: 45px;
+  font-size: 1.25rem;
+	font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+.btnsubmit--halfsized--gray{
+  background-color: #F5F5F5;
+  color:#000000;
+  width: 50%;
+  height: 45px;
+  font-size: 1.25rem;
+	font-family: 'Poppins', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,11 +83,43 @@ body {
   color:#FFFF;
   width: 150px;
   height: 45px;
+  font-size: 1.25rem;
+	font-family: 'Poppins', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 3vh;
   margin-bottom: 2vh;
+}
+
+.btnsubmit--smallsized--white{
+	background-color: #FFFFFF;
+	color:#FFBB49;
+	width: 150px;
+	height: 45px;
+	font-weight: 600;
+	font-size: 1.25rem;
+	font-family: 'Poppins', sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 3vh;
+	margin-bottom: 2vh;
+}
+
+.btnsubmit--smallsized--gray{
+	background-color: #F5F5F5;
+	color:#000000;
+	width: 150px;
+	height: 45px;
+	font-weight: 600;
+	font-size: 1.25rem;
+	font-family: 'Poppins', sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 3vh;
+	margin-bottom: 2vh;
 }
 
 .font-color--white{
@@ -147,4 +205,31 @@ body {
   justify-items: center;
   align-items: center;
   text-align: center;
+}
+
+.link {
+  &--inactive{
+    color: #5A5A5A;
+  }
+
+  &--active{
+    color: #000000;
+    font-weight: bold;
+  }
+}
+
+.navbar-footer {
+
+  &__logo {
+      margin-left: 5%;
+  }
+  
+  &__desc {
+      padding-left: 3%;
+  }
+
+  &__desc-right {
+      padding-right: 5%;
+  }
+
 }
